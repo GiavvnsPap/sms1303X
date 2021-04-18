@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+	 
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+	
+	<script type="text/javascript">
+		var UpperCaser = {
+			MAP: {
+				'ά':'α',
+				'έ':'ε',
+				'ό':'ο',
+				'ώ':'ω',
+				'ύ':'υ',
+				'ϋ':'υ',
+				'ΰ':'υ',
+				'ί':'ι',
+				'ϊ':'ι',
+				'ΐ':'ι',
+				'ή':'η',
+				'Ά':'α',
+				'Έ':'ε',
+				'Ό':'ο',
+				'Ώ':'ω',
+				'Ύ':'υ',
+				'Ί':'ι',
+				'Ή':'η'
+			},
+			toUpper: function(text) {
+				if (!text) return '';
+					var i, c;
+					for(i=0; i<text.length; i++) {
+						c = text[i];
+						if (this.MAP[c]) {
+							text = this.replaceAt(text, i, this.MAP[c]);
+						}
+					}
+				return text.toUpperCase();
+			},
+			replaceAt: function(text, index, char) {
+				return text.substr(0, index) + char + text.substr(index+char.length);
+			}
+		}
+	</script>
+
+	<title>SMS 13033 Form</title>
+
+</head>
+
+
+<body style="width:100%;">
+
+	<form name="sms_content" style="margin: 0 0 0px;text-align: center;">
+
+	<div class="well" style="margin-bottom:0px;border:0px;">
+	
+		<h3 style="color:orange;">13033</h3>
+		
+		</br>
+	
+		<label class="col-md-4 control-label" for="selectbasic_1">Μετακίνηση :</label>
+			<div class="col-md-4" style="margin-bottom:10px;">
+				<select id="selectbasic_1" name="selectbasic_1" type="text" class="form-control">
+					<option value="1">1.  φαρμακείο / γιατρός</option>
+					<option value="2">2.  κατάστημα</option>
+					<option value="3">3.  δημόσια υπηρεσία / τράπεζα</option>
+					<option value="4">4.  παροχή βοήθειας</option>
+					<option value="5">5.  τελετή</option>
+					<option value="6" selected="selected">6.  σωματική άσκηση</option>
+				</select>
+			</div>
+		<label class="col-md-4 control-label" for="textinput_1">Ονοματεπώνυμο :</label>  
+			<div class="col-md-4" style="margin-bottom:10px;">
+			    <input id="textinput_1" name="textinput_1" type="text" placeholder="" class="form-control input-md" required="">
+			</div>
+		<label class="col-md-4 control-label" for="textinput_2">Διεύθυνση Κατοικίας :</label>  
+			<div class="col-md-4" style="margin-bottom:10px;">
+				<input id="textinput_2" name="textinput_2" type="text" placeholder="" class="form-control input-md" required="">	
+			</div>
+		<label class="col-md-4 control-label">Επιθυμητή Ώρα :</label>	
+			<div class="col-md-4" style="margin-bottom:10px;">
+				<select id="selectbasic_2" name="selectbasic_2" type="text" class="form-control">
+					<option value="00">00</option>
+					<option value="01">01</option>
+					<option value="02">02</option>
+					<option value="03">03</option>
+					<option value="04">04</option>
+					<option value="05" selected="selected">05</option>
+					<option value="06">06</option>
+					<option value="07">07</option>
+					<option value="08">08</option>
+					<option value="09">09</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+				</select>
+				<select id="selectbasic_3" name="selectbasic_3" type="text" class="form-control">
+					<option value="00" selected="selected">00</option>
+					<option value="01">01</option>
+					<option value="02">02</option>
+					<option value="03">03</option>
+					<option value="04">04</option>
+					<option value="05">05</option>
+					<option value="06">06</option>
+					<option value="07">07</option>
+					<option value="08">08</option>
+					<option value="09">09</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+					<option value="29">29</option>
+					<option value="30">30</option>
+					<option value="31">31</option>
+					<option value="32">32</option>
+					<option value="33">33</option>
+					<option value="34">34</option>
+					<option value="35">35</option>
+					<option value="36">36</option>
+					<option value="37">37</option>
+					<option value="38">38</option>
+					<option value="39">39</option>
+					<option value="40">40</option>
+					<option value="41">41</option>
+					<option value="42">42</option>
+					<option value="43">43</option>
+					<option value="44">44</option>
+					<option value="45">45</option>
+					<option value="46">46</option>
+					<option value="47">47</option>
+					<option value="48">48</option>
+					<option value="49">49</option>
+					<option value="50">50</option>
+					<option value="51">51</option>
+					<option value="52">52</option>
+					<option value="53">53</option>
+					<option value="54">54</option>
+					<option value="55">55</option>
+					<option value="56">56</option>
+					<option value="57">57</option>
+					<option value="58">58</option>
+					<option value="59">59</option>
+				</select>
+			</div>
+		<label class="col-md-4 control-label">Επιθυμητή Ημερομηνία :</label>
+			<div class="col-md-4" style="margin-bottom:10px;">
+				<select id="selectbasic_4" name="selectbasic_4" type="text" class="form-control">
+					<option value="1" selected="selected">01</option>
+					<option value="2">02</option>
+					<option value="3">03</option>
+					<option value="4">04</option>
+					<option value="5">05</option>
+					<option value="6">06</option>
+					<option value="7">07</option>
+					<option value="8">08</option>
+					<option value="9">09</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+					<option value="29">29</option>
+					<option value="30">30</option>
+					<option value="31">31</option>
+				</select>
+				<select id="selectbasic_5" name="selectbasic_5" type="text" class="form-control">
+					<option value="January">Ιανουαρίου</option>
+					<option value="February">Φεβρουαρίου</option>
+					<option value="March">Μαρτίου</option>
+					<option value="April" selected="selected">Απριλίου</option>
+					<option value="May">Μαΐου</option>
+					<option value="June">Ιουνίου</option>
+					<option value="July">Ιουλίου</option>
+					<option value="August">Αυγούστου</option>
+					<option value="September">Σεπτεμβρίου</option>
+					<option value="October">Οκτωβρίου</option>
+					<option value="November">Νοεμβρίου</option>
+					<option value="December">Δεκεμβρίου</option>
+				</select>
+				<select id="selectbasic_6" name="selectbasic_6" type="text" class="form-control">
+					<option value="2021" selected="selected">2021</option>
+					<option value="2022">2022</option>
+					<option value="2023">2023</option>
+				</select>
+			</div>
+		<label class="col-md-4 control-label" for="singlebutton"></label>
+			<div class="col-md-4" style="padding-top:10px;margin-bottom:10px;">
+				<input type="hidden" name="form_submitted" value="1" />
+				<button id="singlebutton" type="button" class="btn btn-primary">Αποθήκευση</button>
+			</div>
+	</div>
+
+	</form>
+	
+	<script type="text/javascript">
+	
+		const selectbasic_1 = document.getElementById("selectbasic_1");
+		const textinput_1 = document.getElementById("textinput_1");
+		const textinput_2 = document.getElementById("textinput_2");
+		
+		const selectbasic_2 = document.getElementById("selectbasic_2");
+		const selectbasic_3 = document.getElementById("selectbasic_3");	
+		
+		const selectbasic_4 = document.getElementById("selectbasic_4");
+		const selectbasic_5 = document.getElementById("selectbasic_5");		
+		const selectbasic_6 = document.getElementById("selectbasic_6");
+		
+		const singlebutton = document.getElementById("singlebutton");
+		
+		singlebutton.onclick = function () {
+			const sel1 = selectbasic_1.value;
+			const txt1 = textinput_1.value;
+			const txt2 = textinput_2.value;
+			const sel2 = selectbasic_2.value;
+			const sel3 = selectbasic_3.value;
+			const sel4 = selectbasic_4.value;
+			const sel5 = selectbasic_5.value;
+			const sel6 = selectbasic_6.value;
+			
+			var txt1U = UpperCaser.toUpper(txt1);
+			var txt2U = UpperCaser.toUpper(txt2);	
+				
+			var time = sel2 + ":" + sel3 + ":00";
+			var date = sel5 + " " + sel4 + ", " + sel6;
+			var datetime = date + " " + time;
+			
+			var myDate = new Date(datetime); // Your timezone!
+			// var myEpoch = myDate.getTime()/1000.0;
+			var myEpoch = myDate.getTime();
+			
+			const address = 13033;
+			const address1 = address;
+			const address2 = address;
+			var date1 = myEpoch;
+			var date2 = date1 + 43000;
+			const type1 = 2;
+			const type2 = 1;
+			var body1 = sel1 + " " + txt1 + " " + txt2;
+			var body2 = "ΜΕΤΑΚΙΝΗΣΗ " + " " + sel1 + " " + txt1U + " " + txt2U;
+			const contact_name = 13033;
+			const contact_name1 = contact_name;
+			const contact_name2 = contact_name;
+			
+			const milliseconds1 = date1;
+			const dateObject1 = new Date(milliseconds1);
+			
+			const milliseconds2 = date2;
+			const dateObject2 = new Date(milliseconds2);			
+			
+			const options_d = { year: 'numeric', month: 'short', day: 'numeric' };			
+			const read_date1 = dateObject1.toLocaleDateString('el-GR', options_d);
+			const read_date2 = dateObject2.toLocaleDateString('el-GR', options_d);
+			const options_t = { hour12: false };
+			const read_time1 = dateObject1.toLocaleTimeString('el-GR', options_t);
+			const read_time2 = dateObject2.toLocaleTimeString('el-GR', options_t);
+			
+			
+			console.log(address1);
+			console.log(date1);
+			console.log(type1);
+			console.log(body1);
+			console.log(read_date1);
+			console.log(read_time1);
+			console.log(contact_name1);
+			
+			console.log(address2);
+			console.log(date2);
+			console.log(type2);
+			console.log(body2);
+			console.log(read_date2);
+			console.log(read_time2);
+			console.log(contact_name2);
+			
+			var xml_data = "<?xml version=\'1.0\' encoding=\'UTF-8\' standalone=\'yes\' ?>\n<?xml-stylesheet type=\"text/xsl\" href=\"sms.xsl\"?>\n<smses count=\"2\">\n  <sms protocol=\"0\" address=\"" + address1 + "\" date=\"" + date1 + "\" type=\"" + type1 + "\" subject=\"null\" body=\"" + body1  + "\" toa=\"null\" sc_toa=\"null\" service_center=\"null\" read=\"1\" status=\"-1\" locked=\"0\" readable_date=\"" + read_date1 + " " + read_time1 + "\" contact_name=\"" + contact_name1 + "\" />\n  <sms protocol=\"0\" address=\"" + address2 + "\" date=\"" + date2 + "\" type=\"" + type2 + "\" subject=\"null\" body=\"" + body2  + "\" toa=\"null\" sc_toa=\"null\" service_center=\"null\" read=\"1\" status=\"-1\" locked=\"0\" readable_date=\"" + read_date2 + " " + read_time2 + "\" contact_name=\"" + contact_name2 + "\" />\n</smses>";
+			
+			console.log(xml_data);
+			
+			var text = xml_data;
+			var filename = "sms13033.xml";
+			
+			download(filename, text);
+			
+		};
+		
+		function download(filename, text) {
+			var element = document.createElement('a');
+			element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+			element.setAttribute('download', filename);
+
+			element.style.display = 'none';
+			document.body.appendChild(element);
+
+			element.click();
+
+			document.body.removeChild(element);
+		}
+		
+	</script>
+
+
+</body>
